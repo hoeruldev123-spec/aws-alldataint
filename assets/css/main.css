@@ -74,58 +74,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -1242,6 +1190,85 @@ section,
 
   100% {
     transform: translateY(0);
+  }
+}
+
+/*--------------------------------------------------------------
+# Tier Section
+--------------------------------------------------------------*/
+.tier {
+  padding: 60px 0;
+  background: #ffffff; /* Soft background, bisa diganti sesuai tema */
+  text-align: center;
+}
+
+.tier .section-title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.tier .section-title p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  line-height: 1.6;
+}
+
+.tier .tier-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tier .tier-item img {
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.tier .tier-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tier .section-title h2 {
+    font-size: 1.6rem;
+  }
+
+  .tier .section-title p {
+    font-size: 1rem;
+  }
+
+  .tier .tier-item {
+    padding: 10px;
+  }
+
+  .tier .tier-item img {
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tier {
+    padding: 40px 0;
+  }
+
+  .tier .section-title h2 {
+    font-size: 1.4rem;
+  }
+
+  .tier .section-title p {
+    font-size: 0.95rem;
+  }
+
+  .tier .Certification-item img {
+    max-height: 100px;
   }
 }
 
