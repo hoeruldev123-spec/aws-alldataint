@@ -951,8 +951,8 @@ section,
 --------------------------------------------------------------*/
 .hero2 {
   position: relative;
-  height: 100vh;
-  width: 100%; /* full lebar */
+  height: 52vh;
+  width: 100%;
 
   padding-top: 160px;
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 95%) 50%, color-mix(in srgb, var(--accent-color), transparent 98%) 25%, transparent 50%);
@@ -970,7 +970,7 @@ section,
 }
 
 .hero2-section {
-  margin-bottom: 10px; /* bisa atur sesuai kebutuhan */
+  margin-bottom: 10px;
 }
 
 .hero2 .hero2-content {
@@ -990,6 +990,11 @@ section,
 }
 
 @media (max-width: 992px) {
+  .hero2 {
+    height: 80vh; /* full screen */
+    padding-top: 100px; /* kurangi padding biar konten pas */
+  }
+
   .hero2 .hero2-content {
     text-align: center;
     margin-bottom: 3rem;
@@ -1005,6 +1010,11 @@ section,
 }
 
 @media (max-width: 575px) {
+  .hero2 {
+    height: 80vh; /* tetap full screen */
+    padding-top: 80px;
+  }
+
   .hero2 .hero2-content h1 {
     font-size: 2rem;
   }
@@ -1447,6 +1457,83 @@ section,
 
   100% {
     transform: translateY(0);
+  }
+}
+
+/* ===== About2 Section ===== */
+.about2 {
+  padding: 60px 0; /* default spacing */
+}
+
+.about2 .about-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about2 .about-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Gambar biar fleksibel */
+.about2 .main-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* ========================= */
+/* ======= Responsive ====== */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .about2 .main-image {
+    max-width: 80%; /* batasi lebar gambar */
+    margin: 0 auto; /* center */
+    display: block; /* pastikan ketengah */
+  }
+
+  .about2 {
+    padding: 40px 0;
+  }
+
+  .about2 .about-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .about2 .about-description {
+    text-align: center;
+  }
+
+  .about2 .image-wrapper {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .about2 {
+    padding: 30px 0;
+  }
+
+  .about2 .main-image {
+    max-width: 90%; /* lebih fleksibel di hp kecil */
+    margin: 20px auto;
+  }
+
+  .about2 .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about2 .about-description {
+    font-size: 0.95rem;
   }
 }
 
