@@ -2621,3 +2621,54 @@ section,
     padding: 0 60px;
   }
 }
+
+/* Error 404 Page Styling */
+.error-404 {
+  min-height: 100vh; /* supaya full layar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa; /* warna abu terang */
+  text-align: center;
+  padding: 60px 15px;
+}
+
+.error-404 .error-icon i {
+  font-size: 4rem;
+  color: #dc3545; /* merah bootstrap danger */
+}
+
+.error-404 .error-code {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #212529;
+  line-height: 1;
+}
+
+.error-404 .error-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.error-404 .error-text {
+  font-size: 1rem;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.error-404 .search-box .form-control {
+  border-radius: 30px 0 0 30px;
+  padding: 12px 20px;
+}
+
+.error-404 .search-box .search-btn {
+  border-radius: 0 30px 30px 0;
+  background-color: #0d6efd; /* bootstrap primary */
+  color: #fff;
+}
+
+.error-404 .search-box .search-btn:hover {
+  background-color: #0b5ed7; /* lebih gelap */
+}
